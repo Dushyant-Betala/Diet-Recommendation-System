@@ -1,0 +1,234 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Project</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="{% url 'index' %}" class="navbar-brand">Diet<span>and</span>Fitness</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
+                        <a href="{% url 'UserLogin' %}" class="nav-item nav-link">User</a>
+                        <a href="{% url 'AdminLogin' %}" class="nav-item nav-link">Admin</a>
+                        <a href="{% url 'UserRegister' %}" class="nav-item nav-link">Register</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav Bar End -->
+
+
+        <!-- Hero Start -->
+        <div class="hero">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-text">
+                            <h2 style="font-size:3rem; font-weight:bold;color:black">Diet Recommendation System <span> using Machine Learning</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="hero-image">
+                            <img src="{% static 'img/hero.png' %}" alt="Hero Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero   End -->
+
+
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-img">
+                            <img src="{% static 'img/about.png' %}" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="section-header text-left">
+<!--                            <p>Learn About Us</p>-->
+                            <h2>Welcome to Diet Recommendation System</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                Nowadays, more individuals are being diagnosed
+with diseases that are becoming chronic due to not following the
+proper diet, not doing proper exercise regularly, or not giving
+proper attention to the diseases because of busy schedules. Hence,
+we propose a system that aims at improving the health of the
+patients suffering from various diseases by recommending them
+healthier diet and exercise plans by analyzing and monitoring
+health parameters and the values from their latest reports related
+to the disease.
+                            </p>
+                            <p>
+                              For this,
+we have broadly classified our system into 2 modules: 1. Health
+Monitoring, 2. Diet & Exercise Recommendation. In the Health
+Monitoring module, the system would suggest follow-up sessions
+until the reports come normal. For the Diet and Exercise
+Recommendation module, the algorithm that is used is a
+Decision tree for classification.
+                            </p>
+<!--                            <a class="btn" href="">Learn More</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Service Start -->
+        <div class="service">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>What can you do more...</p>
+                    <h2>Yoga For Health</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-workout"></i>
+                            </div>
+                            <h3>Heal emotions</h3>
+                            <p class="justify">
+                                Emotional healing is the ability to acknowledge events and circumstances in our lives that may hinder us to move forward. It's a process that allows us to take control of our thoughts, feelings and emotions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item active">
+                            <div class="service-icon">
+                                <i class="flaticon-workout-1"></i>
+                            </div>
+                            <h3>Body Refreshes</h3>
+                            <p>
+                               Try walking outside for 20-30 minutes a couple times a week to refresh your mind. A little physical activity can naturally increase endorphins leading to more energy, pain relief, and reduced stress.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-workout-2"></i>
+                            </div>
+                            <h3>Mind & Serenity</h3>
+                            <p>
+                              The definition of serenity is a state of being calm, peaceful and untroubled. Achieving this positive state of mind means you won't feel as troubled by life's ups and downs. While addiction often brings chaos, a loss of control , serenity will help you stay calm and true to yourself.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-workout-3"></i>
+                            </div>
+                            <h3>Enjoy Your life</h3>
+                            <p>
+                               Happiness, true happiness, is an inner quality True happiness is to enjoy the present, without anxious dependence upon the future. ...
+The only thing that holds true happiness is that moment when you're in it.Being of service to others is what brings true happiness.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-workout-4"></i>
+                            </div>
+                            <h3>Body & Spirituality</h3>
+                            <p>
+                                Some research shows a connection between your beliefs and your sense of well being. Positive beliefs, comfort, and strength gained from religion, meditation, and prayer can contribute to well being.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-yoga-pose"></i>
+                            </div>
+                            <h3>Body & Mind</h3>
+                            <p>
+                                The mind is about mental processes, thought and consciousness. The body is about the physical aspects of the brain-neurons and how the brain is structured.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+
+
+<!--         Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+
+
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">2021 Dusber Corporation</a>,Designed By Dushyant and Yuvraj</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+         Footer End
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+        <script src="{% static 'mail/contact.js' %}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>

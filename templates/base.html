@@ -1,0 +1,105 @@
+    {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">  
+        <title>Project</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark"style="background:#f7cac9 !important;">
+<!--        <div class="navbar navbar-expand-lg bg-dark navbar-dark"style="background:#f7cac9 !important;">-->
+                <div class="container-fluid">
+                <a href="{% url 'index' %}" class="navbar-brand">Diet<span>and</span>Fitness</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="{% url 'index' %}" class="nav-item nav-link active" style="color:white">Home</a>
+                        <a href="{% url 'UserLogin' %}" class="nav-item nav-link">User</a>
+                        <a href="{% url 'AdminLogin' %}" class="nav-item nav-link">Admin</a>
+                        <a href="{% url 'UserRegister' %}" class="nav-item nav-link">Register</a>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br><br><br><br>
+     <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 style="font-weight:bold; color:black">Diet Recommendation System Using Machine Learning</h2>
+<!--          <ol>-->
+<!--            <li><a href="index.html">Home</a></li>-->
+<!--            <li>Inner Page</li>-->
+<!--          </ol>-->
+        </div>
+
+      </div>
+    </section>
+  {%block contents%}
+<!--                <h3 style="color:white"> helloo</h3>-->
+
+{%endblock%}
+
+
+<!--         Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+
+
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">2021 Alex Corporation</a>, All Right Reserved.Designed By
+                                Team T</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+        <script src="{% static 'mail/contact.js' %}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
